@@ -27,7 +27,7 @@ exports.handler = (event, context, callback) => {
       callback(null, {
         id: params.Item.id.S,
         Title: params.Item.Title.S,
-        Authors_id: params.Item.Authors_id.S,
+        authors_id: params.Item.Authors_id.S,
       });
     }
   });

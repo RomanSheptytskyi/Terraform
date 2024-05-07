@@ -14,7 +14,7 @@ exports.handler = (event, context, callback) => {
   const params = {
     Item: {
       id: {
-        S: event.id
+        S: id
       },
       Title: {
         S: event.title
@@ -33,7 +33,7 @@ exports.handler = (event, context, callback) => {
       callback(null, {
         id: params.Item.id.S,
         Title: params.Item.Title.S,
-        Authors_Id: params.Item.Authors_id.S,
+        authors_id: params.Item.Authors_id.S,
       });
     }
   });
