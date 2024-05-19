@@ -38,7 +38,24 @@ variable "aws_api_gateway_rest_api_execution_arn" {
 variable "logging_log_group_authors" {
   type = string
 }
+
 variable "logging_log_group_courses" {
+  type = string
+}
+
+variable "logging_log_group_update_course" {
+  type = string
+}
+
+variable "logging_log_group_get_course" {
+  type = string
+}
+
+variable "logging_log_group_delete_course" {
+  type = string
+}
+
+variable "logging_log_group_save_course" {
   type = string
 }
 
